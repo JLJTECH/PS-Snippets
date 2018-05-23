@@ -13,3 +13,7 @@ Various PowerShell snippets and cmdlet resources
 ### Unlock AD User Account
 
 ``Unlock-ADAccount -Identity “username”``
+
+## List file age in folder
+
+``Get-ChildItem c:\path -File | Select-Object Name, *time``
