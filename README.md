@@ -17,3 +17,7 @@ Various PowerShell snippets and cmdlet resources
 ### List file age in folder
 
 ``Get-ChildItem c:\path -File | Select-Object Name, *time``
+
+### List last logon time for User
+
+``Get-ADUser -Identity “username” -Properties “LastLogonDate”``
